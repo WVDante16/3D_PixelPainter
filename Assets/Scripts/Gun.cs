@@ -56,7 +56,7 @@ public class Gun : MonoBehaviour
         //Funcion para disparar un raycast desde la camara que regresa un true / false
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitColor, range))
         {
-            if (hitColor.transform.tag != null)
+            if (hitColor.transform.tag != null && hitColor.transform.tag != "Untagged" && hitColor.transform.tag != "Ground")
             {
                 colorSelect = hitColor.transform.tag;
             }
