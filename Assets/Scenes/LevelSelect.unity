@@ -150,7 +150,7 @@ RectTransform:
   m_GameObject: {fileID: 185506476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2031901614}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e28df8aab22cce14fae7761350b31139, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe1231a2d4c654147b4ec633c948ff8a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In Progress
+  m_text: Stardew Valley Chicken
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f75565595ad0d264e955420794e81787, type: 2}
   m_sharedMaterial: {fileID: 5906003647950209768, guid: f75565595ad0d264e955420794e81787, type: 2}
@@ -1236,8 +1236,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2000,7 +2000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e28df8aab22cce14fae7761350b31139, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be38f68a5d806a8459803f485d54a1c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In Progress
+  m_text: Super Mario
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f75565595ad0d264e955420794e81787, type: 2}
   m_sharedMaterial: {fileID: 5906003647950209768, guid: f75565595ad0d264e955420794e81787, type: 2}
