@@ -12,5 +12,21 @@ public class LevelSelector : MonoBehaviour
     public void OpenScene()
     {
         SceneManager.LoadScene("Level_" + level.ToString());
+
+        if (level == 1)
+        {
+            //Instanciar el sonido de salto
+            AudioManager.Instance.PlayMusic("Pokemon");
+        }
+        else if (level == 2)
+        {
+            //Instanciar el sonido de salto
+            AudioManager.Instance.PlayMusic("Stardew");
+        }
+        else if (level == 3)
+        {
+            //Instanciar el sonido de salto
+            AudioManager.Instance.PlayMusic("Mario");
+        }
     }
 }

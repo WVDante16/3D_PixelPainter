@@ -332,6 +332,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4435189283943044843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902564753431625367}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902564753431625367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435189283943044843}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 1, z: 4}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3151075922042320082}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8414341572158612020
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +396,7 @@ Transform:
   - {fileID: 2614710932898243916}
   - {fileID: 2614710932137117153}
   - {fileID: 2614710932459777754}
+  - {fileID: 902564753431625367}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -382,3 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 100
   fpsCam: {fileID: 0}
+  colorSelect: 
+  canon: {fileID: 902564753431625367}
+  shootParticle: {fileID: 2241946789505778624, guid: 8c38035bbad16474a808b2a93518cd00, type: 3}
+  changeParticle: {fileID: 7686476020724731450, guid: 47316ae87b29dc4439f1d00f78aecd74, type: 3}

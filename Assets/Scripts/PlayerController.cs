@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
         cam = transform.GetChild(0); //Dar la posicion del primer hijo del GO
         gun = transform.GetChild(1);
         rotX = cam.eulerAngles.x;
+
+
     }
 
     private void Update()
@@ -45,6 +47,9 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(0, jumpForce, 0);
             playerOnGround = false;
             jump = false;
+
+            //Instanciar el sonido de salto
+            AudioManager.Instance.PlaySFX("Jump");
         }
     }
 

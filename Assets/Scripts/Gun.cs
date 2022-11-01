@@ -8,6 +8,9 @@ public class Gun : MonoBehaviour
     public float range = 100f; //Rango del disparo
     public Camera fpsCam;
     public string colorSelect = "";
+    public Transform canon; //Punto de disparo
+    public GameObject shootParticle;
+    public GameObject changeParticle;
 
     //Variables privadas
     private bool shooting = false;
@@ -43,7 +46,13 @@ public class Gun : MonoBehaviour
             //Comprobacion y ejecucion del cambio de color
             if (change != null && hit.transform.tag == colorSelect)
             {
+                //Instanciar particula de disparo
+                Instantiate(shootParticle, canon.transform.position, canon.transform.rotation);
+
                 change.ChangeColor();
+
+                //Instanciar el sonido de disparo
+                AudioManager.Instance.PlaySFX("Shoot");
             }
         }
     }
@@ -58,7 +67,13 @@ public class Gun : MonoBehaviour
         {
             if (hitColor.transform.tag != null && hitColor.transform.tag != "Untagged" && hitColor.transform.tag != "Ground")
             {
+                //Instanciar particula de cambio
+                Instantiate(changeParticle, canon.transform.position, canon.transform.rotation);
+
                 colorSelect = hitColor.transform.tag;
+
+                //Instanciar el sonido de cambio
+                AudioManager.Instance.PlaySFX("Charge");
             }
         }
     }
